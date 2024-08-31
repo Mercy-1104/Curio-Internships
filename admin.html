@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .admin-container {
+      display: flex;
+    }
+    
+    .sidebar {
+      width: 250px;
+      background-color:rgb(14, 168, 152);;
+      color: #fff;
+      padding: 20px;
+      height: 1400px;
+      font-size: 24px;
+    }
+    
+    .sidebar h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    
+    .nav-menu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .nav-menu li {
+      margin-bottom: 10px;
+    }
+    
+    .nav-menu a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .nav-menu a:hover {
+      text-decoration: underline;
+    }
+    
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .main-content header {
+      margin-bottom: 20px;
+    }
+    .content {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .content img{
+    height: 500px;;
+    width: 975px;
+    }
+    
+    h1 {
+      font-size: 32px;
+      margin: 0;
+      color: rgb(14, 168, 152);
+      text-align: center;
+    }
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color:rgb(14, 168, 152);
+        color: #fff;
+        text-decoration: none;
+         border-radius: 4px;
+         text-align: center;
+        }
+  </style>
+</head>
+<body>
+  <div class="admin-container">
+    <div class="sidebar">
+      <h2>Admin Panel</h2>
+      <ul class="nav-menu">
+        <li><a href="manage.html">Manage Internships</a></li>
+        <li><a href="newspeakers.html">Manage Speakers</a></li>
+        <li><a href="approve.jsp">View Applications</a></li>
+        <li><a href="seemsg.jsp">View Messages</a></li>
+        <li><a href="usermanage.html">User Management</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <header>
+        <h1>Welcome, Admin!</h1>
+      </header>
+      <div class="content">
+        <img src="https://images.pexels.com/photos/4439410/pexels-photo-4439410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <h2>Which Action you want to perform?</h2>
+      </div>
+      <div class="content">
+        <h3>Manage Internships?</h3>
+        <a href="manage.html" class="btn">Click here</a>
+      </div>
+      <div class="content">
+        <h3>Manage speakers?</h3>
+        <a href="newspeakers.html" class="btn">Click here</a>
+      </div>
+      <div class="content">
+        <h3>View Applications?</h3>
+        <a href="approve.jsp" class="btn">Click here</a>
+      </div>
+      <div class="content">
+        <h3>View Messages?</h3>
+        <a href="seemsg.jsp" class="btn">Click here</a>
+      </div>
+      <div class="content">
+        <h3>Manage users?</h3>
+        <a href="usermanage.html" class="btn">Click here</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

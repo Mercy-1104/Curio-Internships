@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <style>
+        .heading{
+                background-color: rgb(14, 168, 152);
+                color: #fff;
+                padding: 10px;
+                margin-top: 10px;
+                margin-bottom: 40px;
+                font-size: 18px;
+                font-weight: 500;
+                font-family: raleway,sans-serif;
+                text-align: center;
+            }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group p {
+            display: block;
+            font-weight: bold;
+            color: rgb(14, 168, 152);
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea
+        {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: rgb(14, 168, 152);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: rgb(14, 168, 152);
+        }
+    </style>
+</head>
+<body>
+    <div class=heading><h2>Manage Speakers</h2></div>
+    <div class="container">
+        <h1>Add a New Speaker</h1>
+        <form action="newspeakers.jsp" method="post">
+            <div class="form-group">
+                <p>Speaker Name:</p>
+                <input type="text" id="speaker" name="speaker" required>
+            </div>
+            <div class="form-group">
+                <p>Image Address:</p>
+                <input type="text" id="img" name="img" required>
+            </div>
+            <div class="form-group">
+                <p>domain:</p>
+                <input type="text" id="domain" name="domain" required>
+            </div>
+            <div class="form-group">
+                <p>Rating:</p>
+                <input type="text" id="rating" name="rating" required>
+            </div>
+            <div class="form-group">
+                <p>Description:</p>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+</body>
+</html>

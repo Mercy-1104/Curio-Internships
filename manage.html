@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <style>
+        .heading{
+                background-color: rgb(14, 168, 152);
+                color: #fff;
+                padding: 10px;
+                margin-top: 10px;
+                margin-bottom: 40px;
+                font-size: 18px;
+                font-weight: 500;
+                font-family: raleway,sans-serif;
+                text-align: center;
+            }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group p {
+            display: block;
+            font-weight: bold;
+            color: rgb(14, 168, 152);
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: rgb(14, 168, 152);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: rgb(14, 168, 152);
+        }
+    </style>
+</head>
+<body>
+    <div class=heading><h2>Manage Internships</h2></div>
+    <div class="container">
+        <h1>Add a New Internship Domain</h1>
+        <form action="manage.jsp" method="post">
+            <div class="form-group">
+                <p>Domain Name:</p>
+                <input type="text" id="domain" name="domain" required>
+            </div>
+            <div class="form-group">
+                <p>Position:</p>
+                <input type="text" id="position" name="position" required>
+            </div>
+            <div class="form-group">
+                <p>Location:</p>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <p>Duration:</p>
+                <input type="text" id="duration" name="duration" required>
+            </div>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+    <div class="container">
+        <h1>Delete a Internship Domain</h1>
+        <form action="managedel.jsp" method="post">
+            <div class="form-group">
+                <p> Enter Domain Name:</p>
+                <input type="text" id="domain" name="domain" required>
+            </div>
+            <button type="submit">Delete</button>
+        </form>
+    </div>
+</body>
+</html>
